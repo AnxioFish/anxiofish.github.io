@@ -1,0 +1,801 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+            scroll-behavior: smooth;
+             text-decoration: none;
+             list-style: none;
+        }
+        header>h1{
+            margin-left: 15%;
+            margin-top: 13px;
+            float: left;
+            font-size: 22px;
+        }
+        .headers{
+            display: block;
+            position: fixed;
+            top: 0%;
+            height: 65px;
+            width: 100%;
+            background-color: rgb(255, 255, 255);
+            z-index: 100;
+            box-shadow: 0 1px 1px 0.2px rgba(0, 0, 0, 0.151);
+        }
+        .li{
+            float: right;
+            word-spacing: 1px;
+            margin: 20px;
+            font-size: 16px;
+            
+        }
+        ul{
+            width: 80%;
+        }
+        .header-a{
+            color: #000;
+            
+        }a:hover{color: rgb(123, 19, 221);}
+
+        .one{
+            margin-top: 6%;
+        }
+        .one-box{
+            box-sizing: content-box;
+            position: relative;
+        }
+        .one-h1{
+            position: absolute;
+            margin-top: 12%;
+            margin-left: 29%;
+            font-size: 40px;
+
+        }
+        .one-h4{
+            position: absolute;
+            margin-left: 30%;
+            margin-top: 19.5%;
+            font-size: 23px;
+            color: #00000098;
+        }
+        .one-pic{
+            position: absolute;
+            margin-top: 12%;
+            margin-left: 55%;
+            border-radius: 15px;
+        }
+        .one-p{
+            font-size: 15px;
+            position: absolute;
+            margin-top: 22%;
+            margin-left: 30%;
+            color: #00000098;
+        }
+        .one-bton{
+            position: absolute;
+            width: 140px;
+            height: 60px;
+            margin-top: 28%;
+            margin-left: 30%;
+            background-color: #9c09c9;
+            border-radius: 10px;
+            border-color: rgba(240, 248, 255, 0);
+            font-size: 22px;
+            color: aliceblue;
+        }.one-bton:hover{background-color: #820fa5;cursor: pointer;}
+        section{
+            height: 780px;
+            /* box-shadow: 0 1px 1px 0.5px rgba(0,0,0); */
+        }
+        .two{
+/*             margin-top: 3%; */
+            display: block;
+        }
+        .two-box{
+            position: relative;
+            box-sizing: content-box;
+            width: 900px;
+            height: 600px;
+            margin: 3.5% auto;
+        }
+        .two-img{
+            position: absolute;
+            height: 270px;
+            width: 270px;
+            border-radius: 10px;
+            margin: 25% 0%;
+        }
+        .sc-h1{
+            position: absolute;
+            margin-top: 5%;
+            margin-left: 46%;
+            font-size: 35px;
+        }
+        .sc-p{
+            position: absolute;
+            margin-top: 7.8%;
+            margin-left: 47.2%;
+            font-size: 15px;
+            color: #0000006b;
+        }
+        .two-p{
+            position: absolute;
+            margin-top: 25%;
+            width: 350px;
+            margin-left: 60%;
+            font-size: 17px;
+            line-height: 24px;
+            color: #0000008c;
+        }
+        .sc-two-box{
+            position: absolute;
+            width: 350px;
+            height: 80px;
+            /* background-color: #820fa5; */
+            margin-top: 40%;
+            margin-left: 60%;
+            display: flex;
+            justify-content: space-between;
+            text-align: center;
+            font-size: 18px;
+        }
+        .sc-two-p{
+            /* font-size: 16px; */
+            color: #00000079;
+        }
+        .two-sub{
+            position: absolute;
+            width: 140px;
+            height: 60px;
+            margin-top: 58%;
+            margin-left: 72%;
+            background-color: #9c09c9;
+            border-radius: 10px;
+            border-color: rgba(240, 248, 255, 0);
+            font-size: 20px;
+            color: aliceblue;
+        }.two-sub:hover{background-color: #820fa5;cursor: pointer;}
+        .po-h1{
+            position: absolute;
+            margin-top: 5%;
+            margin-left: 45%;
+            font-size: 35px;
+        }
+        .po-p{
+            position: absolute;
+            margin-top: 7.8%;
+            margin-left: 47.2%;
+            font-size: 15px;
+            color: #0000006b;
+        }
+        #one{
+            transition: all 3s;
+        }
+        .three-box-1{
+            position: relative;
+            width: 750px;
+            height: 80px;
+            /* background-color: #820fa5; */
+            margin: 10% auto auto 25%;
+        }
+        .three-img-1{
+            position: absolute;
+            height: 30px;
+            width: 30px;
+            margin: 8px;
+        }
+        .three{
+            position: relative;
+        }
+        .three-img-1>div{
+            position: absolute;
+        }
+        .three-img-h2-1{
+            position: absolute;
+            margin: -1% 8%;
+            font-size: 20px;
+        }.three-img-p-1{
+            position: absolute;
+            margin: 4% 9%;
+            font-size: 14px;
+            color: #0000009a;
+        }.three-img-down-1{
+            position: absolute;
+            width: 32px;
+            height: 32px;
+            margin-top: 1%;
+            margin-left: 95%;
+            transition: .3S;
+        }
+        .three-box-2{
+            position: relative;
+            width: 750px;
+            height: 80px;
+            /* background-color: #820fa5; */
+            margin: 0% auto auto 25%;
+        }
+        .three-img-2{
+            position: absolute;
+            height: 30px;
+            width: 30px;
+            margin: 8px;
+        }
+        .three-img-down-1:hover{cursor: pointer;}
+        .three-img-down-2:hover{cursor: pointer;}
+        .three-img-2>div{
+            position: absolute;
+        }
+        .three-img-h2-2{
+            position: absolute;
+            margin: -1% 8%;
+            font-size: 20px;
+        }.three-img-p-2{
+            position: absolute;
+            margin: 4% 9%;
+            font-size: 14px;
+            color: #0000009a;
+        }.three-img-down-2{
+            width: 32px;
+            height: 32px;
+            margin-top: 1%;
+            margin-left: 95%;
+            transition: .3s;
+        }.three-box{
+            margin-top: 6%;
+            margin-left: 1%;
+        }
+        .three-li{
+            position: relative;
+            height: 18px;
+            width: 750px;
+            background-color: #d09be0;
+            text-indent: 10px;
+            margin-top: 10%;
+            flex-direction: column-reverse;
+            border-radius: 15px;
+        }
+        .three-libox{
+            height: 300px;
+            width: 750px;
+            margin: -3% auto 0% 25%;
+            display: none;
+            transition: all .5s;
+        }
+        .three-box{
+            width: 90%;
+            height: 100%;
+            position: absolute;
+        }
+        .three-li>h3{
+            position: absolute;
+            margin-top: -3.5%;
+            margin-left: 1.5%;
+            z-index: 1000;
+        }
+        .three-li-p{
+            margin-left: 92%;
+            position: absolute;
+            margin-top: -3.5%;
+            font-size: 15px;
+        }
+        .three-li-d1{
+            position: absolute;
+            width: 60%;
+            height: 95%;
+            background-color: #790c9b;
+            border-radius: 15px;
+        }
+        .three-li-d2{
+            position: absolute;
+            width: 70%;
+            height: 95%;
+            background-color: #790c9b;
+            border-radius: 15px;
+        }
+        .three-li-d3{
+            position: absolute;
+            width: 50%;
+            height: 95%;
+            background-color: #790c9b;
+            border-radius: 15px;
+        }
+        .three-li-d4{
+            position: absolute;
+            width: 30%;
+            height: 95%;
+            background-color: #790c9b;
+            border-radius: 15px;
+        }
+        .three-libox-1{
+            height: 300px;
+            width: 750px;
+            margin: -3% auto 0% 25%;
+            display: none;
+            transform: none;
+            transition: all .5s;
+        }
+        .three-li-d1s{
+            position: absolute;
+            width: 90%;
+            height: 95%;
+            background-color: #790c9b;
+            border-radius: 15px;
+        }
+        .three-li-d2s{
+            position: absolute;
+            width: 60%;
+            height: 95%;
+            background-color: #790c9b;
+            border-radius: 15px;
+        }
+        .other-box{
+            width: 90%;
+            height: 100%;
+            margin-top: 5%;
+            margin-left: 1%;
+        }
+        .other>h1{
+            position: absolute;
+            margin: 1% ;
+            margin-left: 47.8%;
+            font-size: 35px;
+        }
+        .other>p{
+            position: absolute;
+            margin-top: 4%;
+            margin-left: 48.1%;
+            font-size: 15px;
+            color: #00000080;
+        }
+        .other-ds-box{
+            position: absolute;
+            height: 450px;
+            width: 60px;
+            /* background-color: #820fa5; */
+            margin-top: 14%;
+            margin-left: 47.1%;
+        }.other-span-1{
+            position: absolute;
+            margin-left: 35%;
+            width: 17px;
+            height: 17px;
+            background-color: #820fa5;
+            border-radius: 50%;
+            display: block;
+        }.other-div-1{
+            position: absolute;
+            width: 1.5px;
+            height: 80px;
+            background-color: #820fa5;
+            margin-left: 49.2%;
+            margin-top: 8%;
+            display: block;
+        }
+        .other-span-2{
+            position: absolute;
+            margin-top: 120%;
+            margin-left: 35%;
+            width: 17px;
+            height: 17px;
+            background-color: #820fa5;
+            border-radius: 50%;
+            display: block;
+        }
+        .other-div-2{
+            position: absolute;
+            width: 1.5px;
+            height: 80px;
+            background-color: #820fa5;
+            margin-left: 49.2%;
+            margin-top: 120%;
+            display: block;
+        }
+        .other-span-3{
+            position: absolute;
+            margin-top: 240%;
+            margin-left: 35%;
+            width: 17px;
+            height: 17px;
+            background-color: #820fa5;
+            border-radius: 50%;
+            display: block;
+        }
+        .other>a{
+            font-size: 22px;
+        }
+        .other-a-1{
+            position: absolute;
+            margin-top: 10.5%;
+            margin-left: 45.5%;
+            color: #0c0c0c;
+
+        }
+        .other-a-2{
+            position: absolute;
+            margin-top: 10.5%;
+            margin-left: 51.9%;
+            color: #0d0d0e;
+        }
+/*         .other-a-1:hover{color: #760e96;}
+        .other-a-2:hover{color: #730d92;} */
+        .ohter-s2-1{
+            position: absolute;
+            margin-top: -1%;
+        }
+        .ohter-s2-2{
+            position: absolute;
+            margin-top: 14%;
+            font-size: 14px;
+            color: #0000008e;
+
+        }
+        .ohter-s2-3{
+            position: absolute;
+            margin-top: 35%;
+            font-size: 13px;
+            color: #00000088;
+
+        }
+        .other-div-div-2{
+            position: absolute;
+            width: 150px;
+            height: 100px;
+            /* background-color: #9d11b9; */
+            margin-top: 14%;
+            margin-left: 38%;
+            display: block;
+        }
+        .other-div-div-3{
+            position: absolute;
+            width: 150px;
+            height: 100px;
+            /* background-color: #9d11b9; */
+            margin-top: 21%;
+            margin-left: 38%;
+            display: block;
+        }
+        .ohter-s3-1{
+            position: absolute;
+            margin-top: -1%;
+        }
+        .ohter-s3-2{
+            position: absolute;
+            margin-top: 14%;
+            font-size: 14px;
+            color: #0000008e;
+
+        }
+        .ohter-s3-3{
+            position: absolute;
+            margin-top: 35%;
+            font-size: 13px;
+            color: #00000088;
+
+        }
+        .other-div-div-4{
+            position: absolute;
+            width: 150px;
+            height: 100px;
+            /* background-color: #9d11b9; */
+            margin-top: 16.5%;
+            margin-left: 54.5%;
+            display: block;
+        }
+        .ohter-s4-1{
+            position: absolute;
+            margin-top: -1%;
+        }
+        .ohter-s4-2{
+            position: absolute;
+            margin-top: 14%;
+            font-size: 14px;
+            color: #0000008e;
+
+        }
+        .ohter-s4-3{
+            position: absolute;
+            margin-top: 35%;
+            font-size: 13px;
+            color: #00000088;
+
+        }
+        .other-div-div-5{
+            position: absolute;
+            width: 150px;
+            height: 100px;
+            /* background-color: #9d11b9; */
+            margin-top: 14%;
+            margin-left: 54.5%;
+            display: none;
+        }
+        .ohter-s5-1{
+            position: absolute;
+            margin-top: -1%;
+        }
+        .ohter-s5-2{
+            position: absolute;
+            margin-top: 14%;
+            font-size: 14px;
+            color: #0000008e;
+
+        }
+        .ohter-s5-3{
+            position: absolute;
+            margin-top: 35%;
+            font-size: 13px;
+            color: #00000088;
+
+        }
+        .five-box{
+            width: 50%;
+            height: 60%;
+            position: absolute;
+            /* background-color: #790c9b; */
+            margin-top: 12%;
+            margin-left: 27%;
+        }
+        .five>h1{
+            position: absolute;
+            margin: 1% ;
+            margin-left: 45.8%;
+            font-size: 35px;
+        }
+        .five>p{
+            position: absolute;
+            margin-top: 4%;
+            margin-left: 49.5%;
+            font-size: 15px;
+            color: #00000080;
+        }.five-img{
+            position: absolute;
+            width: 25px;
+            height: 25px;
+            margin-top: 0.5%;
+
+        }
+        .five-boxs{
+            margin: 5% auto;
+        }
+        .five-h2{
+            margin-left: 6%;
+            margin-top: -2%;
+        }
+        .five-p{
+            margin-left: 6%;
+            margin-top: 1.3%;
+            font-size: 14px;
+            color: #00000085;
+        }
+        .five-block{
+            position:absolute;
+            height: 250px;
+            width: 100%;
+            background-color: #820fa5;
+            z-index: -1;
+            margin-top: 33%;
+        }
+        .five-block>h1{
+            font-size: 35px;
+            color: azure;
+            position: absolute;
+            margin-top: 3%;
+            margin-left: 26%;
+        }
+        .five-block>p{
+            color: #8d6f6f;
+            font-size: 13px;
+            position: absolute;
+            margin-top: 11%;
+            margin-left: 41%;
+        }
+        .five-block>h3{
+            font-size: 27px;
+            color: azure;
+            position: absolute;
+            margin-top: 6%;
+            margin-left: 40%;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <header class="headers">
+        <h1>THE ANXIO FISH </h1>
+        <div class="header-box">
+            <ul>
+                <li class="li"><a href="#five" class="header-a" id="a">联系方式</a></li>
+                <li class="li"><a href="#four" class="header-a aa4" id="a">项目集</a></li>
+                <li class="li"><a href="#two-sub" class="header-a" id="a">技能</a></li>
+                <li class="li"><a href="#two" class="header-a" id="a">关于</a></li>
+                <li class="li"><a href="#one" class="header-a" id="a">主页</a></li>
+            </ul>
+        </div>
+    </header>
+    <section class="one" id="one">
+        <div class="one-box">
+            <h1 class="one-h1">Hi, I'm<br>THE ANXIO FISH</h1>
+            <h4 class="one-h4">欢迎光临，前端。</h4>
+            <p class="one-p">热爱生活，热爱学习，四周充满阳光。</p>
+            <img src="E:\图画\82732925_p0_square1200.jpg" class="one-pic">
+            <input type="submit" class="one-bton" id="one-bton" value="遇见我">
+        </div>
+    </section>
+    <section id="two">
+
+        <h1 class="sc-h1">关于我</h1>
+        <p class="sc-p">简单介绍</p>
+
+        <div class="two-box">
+
+            <img src="E:\图画\头像.jpg" class="two-img">
+            <p class="two-p">web相关开发人员，目前就读于广东**，现大一，知识储备还不够完善。预备从事JavaWeb方向的岗位。                目前还在学习中...希望两年后求职老爷能保佑我混口饭吃 /(ㄒoㄒ)/~~</p>
+            <div class="sc-two-box">
+
+                <div><h2>00+</h2><br><p class="sc-two-p">年工作经验</p></div>
+                <div><h2>00+</h2><br><p class="sc-two-p">完整项目</p></div>
+                <div><h2>00+</h2><br><p class="sc-two-p">公司任职</p></div>
+            
+            </div>
+
+            <input type="submit" class="two-sub" id="two-sub" value="查看档案">
+
+        </div>
+
+    </section>
+    <section id="three">
+        <h1 class="po-h1">毕生所学</h1>
+        <p class="po-p">技能介绍</p>
+        <div class="three-box">
+            <div class="three-box-1">
+                <img src="E:\图标\数据分析.png" class="three-img-1">
+                    <div><h2 class="three-img-h2-1">前端工程师</h2><p class="three-img-p-1">应该</p></div>
+                    <img src="E:\图标\向下.png" class="three-img-down-1">
+            </div>
+            <div class="three-libox" id="three-libox">
+                    <ul>
+                        <li class="three-li"><h3>HTML</h3><p class="three-li-p">60%</p><div class="three-li-d1"></div></li>
+                        <li class="three-li"><h3>CSS</h3><p class="three-li-p">70%</p><div class="three-li-d2"></div></li>
+                        <li class="three-li"><h3>JavaScript</h3><p class="three-li-p">50%</p><div class="three-li-d3"></div></li>
+                        <li class="three-li"><h3>Vue</h3><p class="three-li-p">30%</p><div class="three-li-d4"></div></li>
+                    </ul>
+                </div>
+            <div class="three-box-2">
+                <img src="E:\图标\数据分析.png" class="three-img-2">
+                    <div><h2 class="three-img-h2-2">后端开发</h2><p class="three-img-p-2">可能</p></div>
+                    <img src="E:\图标\向下.png" class="three-img-down-2">
+            </div>
+            <div class="three-libox-1" id="three-libox-1">
+                <ul>
+                    <li class="three-li"><h3>Java</h3><p class="three-li-p">90%</p><div class="three-li-d1s"></div></li>
+                    <li class="three-li"><h3>Python</h3><p class="three-li-p">60%</p><div class="three-li-d2s"></div></li>
+                </ul>
+            </div>
+        </div>    
+    </section>
+    <section class="other">
+        <h1>资历</h1>
+        <p>个人履历</p>
+        <a href="#11" class="other-a-1"><b>教育</b></a><a href="#12" class="other-a-2"><b>工作</b></a>
+        <div  class="other-box">
+            <div class="other-ds-box">
+                <span class="other-span-1"></span><span class="other-span-2"></span><span class="other-span-3"></span>
+                <div class="other-div-1"></div>
+                <div class="other-div-2"></div>
+            </div>
+            <div class="other-div-div-2"><span class="ohter-s2-1">物联网应用技术</span><span class="ohter-s2-2">**大学</span><span class="ohter-s2-3">2022 - 2025</span ></div>
+            <div class="other-div-div-3"><span class="ohter-s3-1">网站开发</span><span class="ohter-s3-2">自学</span><span class="ohter-s3-3">2022 -</span ></div>
+            <div class="other-div-div-4"><span class="ohter-s4-1">网页设计</span><span class="ohter-s4-2">自学</span><span class="ohter-s4-3">2022 -</span ></div>
+            <div class="other-div-div-5"><span class="ohter-s5-1">游戏开发</span><span class="ohter-s5-2">期望</span><span class="ohter-s5-3">2023 - </span ></div>
+        </div>
+    </section>
+    <section class="five" id="five">
+        <h1>联系方式</h1>
+        <p>隐私</p>
+        <div class="five-box">
+            <div class="five-box-1 five-boxs">
+                <img src="E:\图标\coffee.png" alt="" srcset="" class="five-img five-img-1">
+                <h2 class="five-h2-1 five-h2">电话</h2>
+                <p class="five-p-1 five-p">150--------922</p>
+            </div>
+            <div class="five-box-2 five-boxs">
+                <img src="E:\图标\mail.png" alt="" srcset="" class="five-img five-img-2">
+                <h2 class="five-h2-2 five-h2">邮箱</h2>
+                <p class="five-p-2 five-p">3228843921@qq.com</p>
+            </div>
+            <div class="five-box-3 five-boxs">
+                <img src="E:\图标\pin.png" alt="" srcset="" class="five-img five-img-3">
+                <h2 class="five-h2-3 five-h2">地址</h2>
+                <p class="five-p-3 five-p">广东 某州</p>
+            </div>
+            
+        </div>
+        <div class="five-block">
+            <h1>THE ANXIO FISH</h1>
+            <p>© ASOUTHERNCAT.Copy from Bedimcode</p>
+            <h3>Thanks for your watch</h3>
+        </div>
+    </section>
+
+
+    <script>
+        var down = document.querySelector('.three-img-down-1');
+        var down2 = document.querySelector('.three-img-down-2');
+        var libox1 = document.querySelector('.three-libox');
+        var libox2 = document.querySelector('.three-libox-1');
+        var flag = 1;
+        down.addEventListener('click',function (){
+            if(flag == 1){
+                libox1.style.display = 'block';
+                this.style.transform = 'rotate(0.5turn)';
+                flag = 0;
+            }else{
+                libox1.style.display = 'none';
+                this.style.transform = 'rotate(-0turn)';
+                flag = 1;
+            }
+        })
+        down2.addEventListener('click',function (){
+            if(flag == 1){
+                libox2.style.display = 'block';
+                this.style.transform = 'rotate(0.5turn)';
+                flag = 0;
+            }else{
+                libox2.style.display = 'none';
+                this.style.transform = 'rotate(-0turn)';
+                flag = 1;
+            }
+        })
+
+        var other_a_1 = document.querySelector('.other-a-1');
+        var other_a_2 = document.querySelector('.other-a-2');
+        var other_div_div_2 = document.querySelector('.other-div-div-2');
+        var other_div_div_3 = document.querySelector('.other-div-div-3');
+        var other_div_div_4 = document.querySelector('.other-div-div-4');
+        var other_div_div_5 = document.querySelector('.other-div-div-5');
+        var other_span_2 = document.querySelector('.other-span-2');
+        var other_span_3 = document.querySelector('.other-span-3');
+        var other_div_1 = document.querySelector('.other-div-1');
+        var other_div_2 = document.querySelector('.other-div-2');
+        other_a_2.addEventListener('click',function(){
+            other_div_div_2.style.display = 'none';
+            other_div_div_3.style.display = 'none';
+            other_div_div_4.style.display = 'none';
+            other_div_div_5.style.display = 'block';
+            this.style.color = '#760e96';
+            other_a_1.style.color = '#000';
+            other_span_2.style.display = 'none';
+            other_span_3.style.display = 'none';
+            other_div_1.style.display = 'none';
+            other_div_2.style.display = 'none';
+        })
+        other_a_1.addEventListener('click',function(){
+            other_div_div_2.style.display = 'block';
+            other_div_div_3.style.display = 'block';
+            other_div_div_4.style.display = 'block';
+            other_div_div_5.style.display = 'none';
+            this.style.color = '#760e96';
+            other_a_2.style.color = '#000';
+            other_span_2.style.display = 'block';
+            other_span_3.style.display = 'block';
+            other_div_1.style.display = 'block';
+            other_div_2.style.display = 'block';
+        })
+        var not_a = document.querySelector('.aa4');
+        not_a.addEventListener('click',function(){
+            alert('抱歉，项目集轮换功能较复杂，我还没学会！暂时（以后估计也没有）无法跳转。');
+        })
+
+        
+    </script>
+</body>
+</html>
